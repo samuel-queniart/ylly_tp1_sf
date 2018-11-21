@@ -6,10 +6,8 @@ use Doctrine\ORM\Mapping as ORM;
 use Knp\DoctrineBehaviors\Model as ORMBehaviors;
 
 /**
- * Article.
- *
- * @ORM\Table(name="article_bis")
  * @ORM\Entity()
+ * @ORM\Table(name="article_bis")
  */
 class ArticleBis
 {
@@ -32,8 +30,6 @@ class ArticleBis
     private $authorBis;
 
     /**
-     * Get id.
-     *
      * @return int
      */
     public function getId()
@@ -50,8 +46,7 @@ class ArticleBis
     }
 
     /**
-     * @param string $author
-     * @param mixed  $authorBis
+     * @param mixed $authorBis
      *
      * @return ArticleBis
      */

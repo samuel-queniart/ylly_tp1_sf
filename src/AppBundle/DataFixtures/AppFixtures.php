@@ -51,7 +51,7 @@ class AppFixtures extends Fixture
         for ($i = 0; $i < 2; ++$i) {
             $article = new ArticleTer();
             $article->setAuthor($faker->name);
-            $article->setAssistante($faker->name);
+            $article->setAssistant($faker->name);
             $article->translate('en')->setTitle($faker->realText(20));
             $article->translate('en')->setHeader($faker->text(100));
             $article->translate('en')->setFooter($faker->text(50));

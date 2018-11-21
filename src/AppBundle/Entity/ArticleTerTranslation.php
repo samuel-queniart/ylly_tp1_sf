@@ -6,7 +6,7 @@ use Doctrine\ORM\Mapping as ORM;
 use Knp\DoctrineBehaviors\Model as ORMBehaviors;
 
 /**
- * @ORM\Entity
+ * @ORM\Entity()
  * @ORM\Table(name="article_ter_translations")
  */
 class ArticleTerTranslation
@@ -56,8 +56,6 @@ class ArticleTerTranslation
     }
 
     /**
-     * Get title.
-     *
      * @return string
      */
     public function getTitle()
@@ -66,8 +64,6 @@ class ArticleTerTranslation
     }
 
     /**
-     * Set header.
-     *
      * @param string $header
      *
      * @return ArticleTerTranslation
@@ -80,8 +76,6 @@ class ArticleTerTranslation
     }
 
     /**
-     * Get header.
-     *
      * @return string
      */
     public function getHeader()
@@ -90,8 +84,6 @@ class ArticleTerTranslation
     }
 
     /**
-     * Set content.
-     *
      * @param string $content
      *
      * @return ArticleTerTranslation
@@ -104,8 +96,6 @@ class ArticleTerTranslation
     }
 
     /**
-     * Get content.
-     *
      * @return string
      */
     public function getContent()
@@ -114,8 +104,6 @@ class ArticleTerTranslation
     }
 
     /**
-     * Set footer.
-     *
      * @param string $footer
      *
      * @return ArticleTerTranslation
@@ -128,8 +116,6 @@ class ArticleTerTranslation
     }
 
     /**
-     * Get footer.
-     *
      * @return string
      */
     public function getFooter()

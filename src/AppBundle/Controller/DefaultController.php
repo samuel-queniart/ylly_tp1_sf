@@ -25,6 +25,7 @@ class DefaultController extends Controller
      * })
      *
      * @param mixed $_locale
+     * @return \Symfony\Component\HttpFoundation\Response
      */
     public function indexAction(Request $request, $_locale)
     {
@@ -48,6 +49,6 @@ class DefaultController extends Controller
             $vars[$key] = $em->getRepository($class)->findAll();
         }
 
-        return $this->render('default/index.html.twig', array_merge($vars, ['_locale' => $_locale]));
+        return $this->render('default/index.html.twig', $vars);
     }
 }

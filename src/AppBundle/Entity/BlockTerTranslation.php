@@ -6,7 +6,7 @@ use Doctrine\ORM\Mapping as ORM;
 use Knp\DoctrineBehaviors\Model as ORMBehaviors;
 
 /**
- * @ORM\Entity
+ * @ORM\Entity()
  * @ORM\Table(name="block_ter_translations")
  */
 class BlockTerTranslation
@@ -57,8 +57,6 @@ class BlockTerTranslation
     }
 
     /**
-     * Get content.
-     *
      * @return string
      */
     public function getContent()
@@ -67,8 +65,6 @@ class BlockTerTranslation
     }
 
     /**
-     * Set content2.
-     *
      * @param string $content2
      *
      * @return BlockTerTranslation
@@ -81,8 +77,6 @@ class BlockTerTranslation
     }
 
     /**
-     * Get content2.
-     *
      * @return string
      */
     public function getContent2()
@@ -91,8 +85,6 @@ class BlockTerTranslation
     }
 
     /**
-     * Set content3.
-     *
      * @param string $content3
      *
      * @return BlockTerTranslation
@@ -105,8 +97,6 @@ class BlockTerTranslation
     }
 
     /**
-     * Get content3.
-     *
      * @return string
      */
     public function getContent3()
@@ -115,8 +105,6 @@ class BlockTerTranslation
     }
 
     /**
-     * Set content4.
-     *
      * @param string $content4
      *
      * @return BlockTerTranslation
@@ -129,8 +117,6 @@ class BlockTerTranslation
     }
 
     /**
-     * Get content4.
-     *
      * @return string
      */
     public function getContent4()
@@ -139,8 +125,6 @@ class BlockTerTranslation
     }
 
     /**
-     * Set title.
-     *
      * @param string $title
      *
      * @return BlockTerTranslation
@@ -153,8 +137,6 @@ class BlockTerTranslation
     }
 
     /**
-     * Get title.
-     *
      * @return string
      */
     public function getTitle()
@@ -163,8 +145,6 @@ class BlockTerTranslation
     }
 
     /**
-     * Set content.
-     *
      * @param string $content
      *
      * @return BlockTerTranslation

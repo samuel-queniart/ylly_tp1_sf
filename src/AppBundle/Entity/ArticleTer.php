@@ -6,10 +6,8 @@ use Doctrine\ORM\Mapping as ORM;
 use Knp\DoctrineBehaviors\Model as ORMBehaviors;
 
 /**
- * Article.
- *
- * @ORM\Table(name="article_ter")
  * @ORM\Entity()
+ * @ORM\Table(name="article_ter")
  */
 class ArticleTer
 {
@@ -34,13 +32,11 @@ class ArticleTer
     /**
      * @var string
      *
-     * @ORM\Column(name="assistante", type="string", length=255)
+     * @ORM\Column(name="assistant", type="string", length=255)
      */
-    private $assistante;
+    private $assistant;
 
     /**
-     * Get id.
-     *
      * @return int
      */
     public function getId()
@@ -65,26 +61,22 @@ class ArticleTer
     }
 
     /**
-     * Set assistante.
-     *
-     * @param string $assistante
+     * @param string $assistant
      *
      * @return ArticleTer
      */
-    public function setAssistante($assistante)
+    public function setAssistant($assistant)
     {
-        $this->assistante = $assistante;
+        $this->assistant = $assistant;
 
         return $this;
     }
 
     /**
-     * Get assistante.
-     *
      * @return string
      */
-    public function getAssistante()
+    public function getAssistant()
     {
-        return $this->assistante;
+        return $this->assistant;
     }
 }

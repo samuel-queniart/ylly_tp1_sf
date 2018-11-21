@@ -6,7 +6,7 @@ use Doctrine\ORM\Mapping as ORM;
 use Knp\DoctrineBehaviors\Model as ORMBehaviors;
 
 /**
- * @ORM\Entity
+ * @ORM\Entity()
  * @ORM\Table(name="block_bis_translations")
  */
 class BlockBisTranslation
@@ -35,8 +35,6 @@ class BlockBisTranslation
     private $content;
 
     /**
-     * Set title.
-     *
      * @param string $title
      *
      * @return BlockBisTranslation
@@ -49,8 +47,6 @@ class BlockBisTranslation
     }
 
     /**
-     * Get title.
-     *
      * @return string
      */
     public function getTitle()
@@ -59,8 +55,6 @@ class BlockBisTranslation
     }
 
     /**
-     * Set custom.
-     *
      * @param string $custom
      *
      * @return BlockBisTranslation
@@ -73,8 +67,6 @@ class BlockBisTranslation
     }
 
     /**
-     * Get custom.
-     *
      * @return string
      */
     public function getCustom()
@@ -83,8 +75,6 @@ class BlockBisTranslation
     }
 
     /**
-     * Set content.
-     *
      * @param string $content
      *
      * @return BlockBisTranslation
@@ -97,8 +87,6 @@ class BlockBisTranslation
     }
 
     /**
-     * Get content.
-     *
      * @return string
      */
     public function getContent()

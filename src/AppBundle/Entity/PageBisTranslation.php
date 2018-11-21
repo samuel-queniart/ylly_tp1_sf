@@ -6,7 +6,7 @@ use Doctrine\ORM\Mapping as ORM;
 use Knp\DoctrineBehaviors\Model as ORMBehaviors;
 
 /**
- * @ORM\Entity
+ * @ORM\Entity()
  * @ORM\Table(name="page_bis_translations")
  */
 class PageBisTranslation
@@ -43,8 +43,6 @@ class PageBisTranslation
     }
 
     /**
-     * Set title.
-     *
      * @param string $title
      *
      * @return PageBisTranslation
@@ -57,8 +55,6 @@ class PageBisTranslation
     }
 
     /**
-     * Get title.
-     *
      * @return string
      */
     public function getTitle()
@@ -67,8 +63,6 @@ class PageBisTranslation
     }
 
     /**
-     * Set subtitle.
-     *
      * @param string $subtitle
      *
      * @return PageBisTranslation
@@ -81,8 +75,6 @@ class PageBisTranslation
     }
 
     /**
-     * Get subtitle.
-     *
      * @return string
      */
     public function getSubtitle()
@@ -91,8 +83,6 @@ class PageBisTranslation
     }
 
     /**
-     * Set content.
-     *
      * @param string $content
      *
      * @return PageBisTranslation
@@ -105,8 +95,6 @@ class PageBisTranslation
     }
 
     /**
-     * Get content.
-     *
      * @return string
      */
     public function getContent()

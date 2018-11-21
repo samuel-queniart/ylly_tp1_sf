@@ -6,10 +6,8 @@ use Doctrine\ORM\Mapping as ORM;
 use Knp\DoctrineBehaviors\Model as ORMBehaviors;
 
 /**
- * Article.
- *
- * @ORM\Table(name="block_bis")
  * @ORM\Entity()
+ * @ORM\Table(name="block_bis")
  */
 class BlockBis
 {
@@ -25,8 +23,6 @@ class BlockBis
     private $id;
 
     /**
-     * Get id.
-     *
      * @return int
      */
     public function getId()
