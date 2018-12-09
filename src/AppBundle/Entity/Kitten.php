@@ -2,10 +2,12 @@
 
 namespace AppBundle\Entity;
 
+use AppBundle\Annotation\NinjaTranslator;
 use Doctrine\ORM\Mapping as ORM;
 use Knp\DoctrineBehaviors\Model as ORMBehaviors;
 
 /**
+ * @NinjaTranslator(name="Kitten")
  * @ORM\Entity()
  * @ORM\Table(name="kitten")
  */
